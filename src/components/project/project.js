@@ -18,7 +18,7 @@ import styles from "./index.module.scss";
 const Project = ({ project }) => {
 
     return (
-        <div className={styles.project}>
+        <a href={project.site_url} target="_blank" rel="noreferrer noopener" className={styles.project}>
             <div className={styles.logoContainer}>
                 <img className={styles.logo} src={project.logo_url} alt={project.name} />
             </div>
@@ -30,7 +30,7 @@ const Project = ({ project }) => {
                     {project.description}
                 </span>
             </div>
-        </div>
+        </a>
     );
 }
 

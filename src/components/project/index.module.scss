@@ -1,6 +1,9 @@
 .project {
   display: flex;
-  cursor: pointer;
+  text-decoration: none;
+  &:visited {
+    color: #ffffff;
+  }
   .logoContainer {
     min-height: 50px;
     min-width: 50px;

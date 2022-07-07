@@ -40,10 +40,14 @@
     .brand {
       font-family: 'Jura', sans-serif;
       font-weight: 700;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
       img {
-        width: auto;
-        height: auto;
+        width: 25px;
+        height: 25px;
         cursor: auto;
+        margin-right: 10px;
       }
     }
   }

@@ -13,12 +13,11 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
 
-import openInfraBrand from '../../assets/OpenInfraFoundation-logo.svg';
 import Project from '../project/project';
 
 import styles from "./index.module.scss";
 
-const Popup = ({ projects }) => {
+const Popup = ({ projects, currentProject }) => {
 
     console.log('projects', projects);
 
@@ -40,10 +39,13 @@ const Popup = ({ projects }) => {
             </div>
             <div className={styles.footer}>
                 <div className={styles.brand}>
-                    <img src={openInfraBrand} alt="OpenInfra" />
+                    <img src={currentProject.logo_url} />
+                    <span>{currentProject.name}</span>
                 </div>
                 <span className={styles.link}>
-                    Learn more at <a href="#">openinfra.dev</a>
+                    Learn more at <a href={currentProject.learn_more_link} target="_blank" rel="noreferrer noopener">
+                        {currentProject.learn_more_text}
+                    </a>
                 </span>
             </div>
         </div>
