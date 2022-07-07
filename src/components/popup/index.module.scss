@@ -1,0 +1,78 @@
+.popup {
+  background-color: #161616;
+  border: 1px solid #a7a9ac;
+  color: #ffffff;
+  width: 520px;
+  position: absolute;
+  top: 51px;
+  right: -35px;
+  .title {
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 30px 25px 0px;
+  }
+  .projects {
+    font-family: 'Roboto', sans-serif;
+    padding: 30px 25px 0px;
+    .projectsWrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px 15px;
+    }
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    align-content: center;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 30px 25px;
+    .link {
+      align-self: center;
+    }
+    a {
+      font-weight: 700;
+      color: #f7b749;
+    }
+    .brand {
+      font-family: 'Jura', sans-serif;
+      font-weight: 700;
+      img {
+        width: auto;
+        height: auto;
+        cursor: auto;
+      }
+    }
+  }
+  hr {
+    margin-top: 30px;
+    border: 0.1px solid #a7a9ac;
+  }
+  .outerTriangle {
+    top: -40px;
+    right: 25px;
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border: 20px solid hsla(0, 0%, 9%, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #a7a9ac;
+    .innerTriangle {
+      top: -17px;
+      right: -19px;
+      content: ' ';
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border: 19px solid hsla(0, 0%, 9%, 0);
+      border-bottom-color: rgba(255, 255, 255, 0);
+      border-bottom-color: #161616;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "projects": [{
+      "name": "Airship",
+      "description": "Automated cloud provisioning and life cycle management ",
+      "is_active": "",
+      "logo_url": "",
+      "site_url": "",
+      "should_show_on_navbar": "",
+      "navbar_title": "",
+      "learn_more_link": "",
+      "learn_more_text": ""
+    }, {
+      "name": "OpenInfra Labs",
+      "description": "Connecting open source projects to production",
+      "is_active": "",
+      "logo_url": "",
+      "site_url": "",
+      "should_show_on_navbar": "",
+      "navbar_title": "",
+      "learn_more_link": "",
+      "learn_more_text": ""
+    },
+    {
+      "name": "Kata Containers",
+      "description": "Secure, lightweight, virtualized containers",
+      "is_active": "",
+      "logo_url": "https://openinfra.dev/static/4cbf9d49db58c8c9016665438cf1d9e8/logo-kata.svg",
+      "site_url": "",
+      "should_show_on_navbar": "",
+      "navbar_title": "",
+      "learn_more_link": "",
+      "learn_more_text": ""
+    },
+    {
+      "name": "StarlingX",
+      "description": "Cloud computing for ultra-low latency applications",
+      "is_active": "",
+      "logo_url": "",
+      "site_url": "",
+      "should_show_on_navbar": "",
+      "navbar_title": "",
+      "learn_more_link": "",
+      "learn_more_text": ""
+    },
+    {
+      "name": "OpenStack",
+      "description": "Programmable infrastructure for VMs, containers and bare metal",
+      "is_active": "",
+      "logo_url": "",
+      "site_url": "",
+      "should_show_on_navbar": "",
+      "navbar_title": "",
+      "learn_more_link": "",
+      "learn_more_text": ""
+    }, {
+      "name": "Zuul",
+      "description": "CI/CD platform for gating changes across repos",
+      "is_active": "",
+      "logo_url": "",
+      "site_url": "",
+      "should_show_on_navbar": "",
+      "navbar_title": "",
+      "learn_more_link": "",
+      "learn_more_text": ""
+    }
+  ]
+}
