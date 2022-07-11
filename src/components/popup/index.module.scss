@@ -79,4 +79,22 @@
       border-bottom-color: #161616;
     }
   }
+  @media (max-width: 768px) {
+    width: 90vw;
+    margin-left: 3vw;
+  }
+  @media (max-width: 550px) {
+    .projects {
+      .projectsWrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px 15px;
+      }
+    }
+    .footer {
+      flex-direction: column;
+      gap: 25px;
+      align-items: center;
+    }
+  }
 }
