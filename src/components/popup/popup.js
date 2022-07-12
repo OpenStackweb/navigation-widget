@@ -11,15 +11,13 @@
  * limitations under the License.
  **/
 
-import React, { useState, useEffect, useMemo } from 'react';
+import React from 'react';
 
 import Project from '../project/project';
 
 import styles from "./index.module.scss";
 
 const Popup = ({ projects, currentProject }) => {
-
-    console.log('projects', projects);
 
     return (
         <div className={styles.popup}>

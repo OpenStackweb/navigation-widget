@@ -14,11 +14,18 @@
 import React from "react";
 import Navigation from "./components/navigation";
 
+import PropTypes from 'prop-types';
+
 const NavigationWidget = ({ ...props }) => {
 
     return (
         <Navigation {...props} />
     );
+}
+
+NavigationWidget.propTypes = {
+    projects: PropTypes.array.isRequired,
+    currentProject: PropTypes.number.isRequired,
 }
 
 export default NavigationWidget;
