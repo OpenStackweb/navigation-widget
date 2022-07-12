@@ -1,5 +1,7 @@
 const path                      = require('path');
-const { merge }                     = require('webpack-merge');
+//const TerserJSPlugin            = require('terser-webpack-plugin');
+//const OptimizeCSSAssetsPlugin   = require('optimize-css-assets-webpack-plugin');
+const merge                     = require('webpack-merge');
 const common                    = require('./webpack.common.js');
 const nodeExternals             = require('webpack-node-externals');
 const { CleanWebpackPlugin }    = require('clean-webpack-plugin');
@@ -32,6 +34,6 @@ module.exports = merge(common, {
         minimize: false
     },
     externals: [nodeExternals({
-        allowlist: ['react-transition-group']
+        whitelist: ['react-transition-group']
     })]
 });

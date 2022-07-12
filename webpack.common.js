@@ -1,6 +1,7 @@
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin      = require("mini-css-extract-plugin");
 
 module.exports = {
+    node: {fs: 'empty'},
     module: {
         rules: [
             {
@@ -37,7 +38,7 @@ module.exports = {
                         options: {
                             modules: {
                                 localIdentName: "[local]___[hash:base64:5]",
-                                localIdentHashSalt: 'navigation-widget',
+                                // localIdentHashSalt: 'navigation-widget',
                             },
                             sourceMap: false
                         }
@@ -75,8 +76,8 @@ module.exports = {
                 ],
             },
             {
-                test: /\.jpg|\.png|\.gif$/,
-                use: "file-loader?name=images/[name].[ext]"
+              test: /\.jpg|\.png|\.gif$/,
+              use: "file-loader?name=images/[name].[ext]"
             },
         ]
     }

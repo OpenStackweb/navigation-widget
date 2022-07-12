@@ -16,7 +16,6 @@ import ReactDOM from 'react-dom';
 import NavigationWidget from './navigation-widget';
 
 import ProjectsData from './projects-data.json';
-import MarketingData from './marketing-data.json';
 
 const widgetProps = {
     projects: ProjectsData.projects,
