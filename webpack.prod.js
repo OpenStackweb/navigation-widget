@@ -6,7 +6,7 @@ const { CleanWebpackPlugin }    = require('clean-webpack-plugin');
 const MiniCssExtractPlugin      = require("mini-css-extract-plugin");
 
 module.exports = merge(common, {
-    entry: './src/summit-registration-lite.js',
+    entry: './src/navigation-widget.js',
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
@@ -16,7 +16,7 @@ module.exports = merge(common, {
     output: {
         filename: 'index.js',
         path: path.resolve(__dirname, 'dist'),
-        library: 'summit-registration-lite',
+        library: 'navigation-widget',
         libraryTarget: 'umd',
         umdNamedDefine: true,
         publicPath: '/dist/',

@@ -10,7 +10,7 @@ module.exports = merge(common, {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            title: 'Summit Registration Lite',
+            title: 'Navigation Widget',
             template: './src/index.ejs'
         }),
         new MiniCssExtractPlugin({

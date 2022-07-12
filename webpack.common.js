@@ -37,7 +37,7 @@ module.exports = {
                         options: {
                             modules: {
                                 localIdentName: "[local]___[hash:base64:5]",
-                                localIdentHashSalt: 'summit-registration-lite',
+                                localIdentHashSalt: 'navigation-widget',
                             },
                             sourceMap: false
                         }

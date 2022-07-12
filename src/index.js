@@ -21,7 +21,6 @@ import MarketingData from './marketing-data.json';
 const widgetProps = {
     projects: ProjectsData.projects,
     currentProject: 3,
-    marketingData: MarketingData,
 };
 
 // width 780px or 230px

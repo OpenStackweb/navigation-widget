@@ -16,7 +16,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git@github.com:fntechgit/summit-registration-lite.git"
+    "url": "git@github.com:OpenStackweb/navigation-widget.git"
   },
   "jest": {
     "moduleNameMapper": {
