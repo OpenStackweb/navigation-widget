@@ -19,7 +19,7 @@ import styles from "./index.module.scss";
 
 import menuIcon from '../../assets/menu-icon.svg';
 
-const Navbar = ({ projects, currentProject, navbarTitle = 'An OpenInfra Project', popupTitle, popupFooterText }) => {
+const Navbar = ({ projects, currentProject, popupTitle, popupFooterText }) => {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -33,7 +33,7 @@ const Navbar = ({ projects, currentProject, navbarTitle = 'An OpenInfra Project'
                 <div className={styles.logo}>
                     <img src={currentProject.logo_url} alt="OpenInfra" />
                 </div>
-                {navbarTitle}
+                {currentProject.nav_bar_title}
             </div>
             <div className={styles.menu}>
                 <img src={menuIcon} onClick={handleMenuClick} alt="Menu" />

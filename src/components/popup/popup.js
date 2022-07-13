@@ -17,7 +17,7 @@ import Project from '../project/project';
 
 import styles from "./index.module.scss";
 
-const Popup = ({ projects, currentProject, popupTitle = 'More OpenInfra Projects', popupFooterText = 'Learn more at' }) => {
+const Popup = ({ projects, currentProject, popupTitle, popupFooterText }) => {
 
     return (
         <div className={styles.popup}>
