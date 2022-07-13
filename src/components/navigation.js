@@ -17,13 +17,13 @@ import '../styles/styles.scss';
 
 import Navbar from './navbar/navbar';
 
-const NavigationWidget = ({ projects, currentProject }) => {
+const NavigationWidget = ({ projects, currentProject, ...props }) => {
 
     const activeProject = projects.find(e => e.id === currentProject);
-    const filteredProjects = projects.filter(e => e.should_show_on_navbar && e.is_active && e.id !== currentProject);
+    const filteredProjects = projects.filter(e => e.should_show_on_nav_bar && e.is_active && e.id !== currentProject);
 
     return (
-        <Navbar projects={filteredProjects} currentProject={activeProject} />
+        <Navbar projects={filteredProjects} currentProject={activeProject} {...props} />
     );
 }
 

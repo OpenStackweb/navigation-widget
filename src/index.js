@@ -18,8 +18,11 @@ import NavigationWidget from './navigation-widget';
 import ProjectsData from './projects-data.json';
 
 const widgetProps = {
-    projects: ProjectsData.projects,
+    projects: ProjectsData,
     currentProject: 3,
+    navbarTitle: 'An OpenInfra Project',
+    popupTitle: 'More OpenInfra Projects',
+    popupFooterText: 'Learn more at'
 };
 
 // width 780px or 230px

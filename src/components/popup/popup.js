@@ -17,7 +17,7 @@ import Project from '../project/project';
 
 import styles from "./index.module.scss";
 
-const Popup = ({ projects, currentProject }) => {
+const Popup = ({ projects, currentProject, popupTitle = 'More OpenInfra Projects', popupFooterText = 'Learn more at' }) => {
 
     return (
         <div className={styles.popup}>
@@ -26,7 +26,7 @@ const Popup = ({ projects, currentProject }) => {
                 </div>
             </div>
             <div className={styles.title}>
-                More OpenInfra Projects
+                {popupTitle}
                 <hr />
             </div>
             <div className={styles.projects}>
@@ -41,7 +41,7 @@ const Popup = ({ projects, currentProject }) => {
                     <span>{currentProject.name}</span>
                 </div>
                 <span className={styles.link}>
-                    Learn more at <a href={currentProject.learn_more_link} target="_blank" rel="noreferrer noopener">
+                    {popupFooterText} <a href={currentProject.learn_more_link} target="_blank" rel="noreferrer noopener">
                         {currentProject.learn_more_text}
                     </a>
                 </span>

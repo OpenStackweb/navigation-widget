@@ -18,19 +18,21 @@ import styles from "./index.module.scss";
 const Project = ({ project }) => {
 
     return (
-        <a href={project.site_url} target="_blank" rel="noreferrer noopener" className={styles.project}>
+        <div className={styles.project}>
             <div className={styles.logoContainer}>
-                <img className={styles.logo} src={project.logo_url} alt={project.name} />
+                <a href={project.site_url} target="_blank" rel="noreferrer noopener">
+                    <img className={styles.logo} src={project.logo_url} alt={project.name} />
+                </a>
             </div>
             <div className={styles.text}>
                 <span className={styles.title}>
-                    {project.name}
+                    <a href={project.site_url} target="_blank" rel="noreferrer noopener">
+                        {project.name}
+                    </a>
                 </span>
-                <span className={styles.description}>
-                    {project.description}
-                </span>
+                <span className={styles.description} dangerouslySetInnerHTML={{ __html: project.description }} />
             </div>
-        </a>
+        </div>
     );
 }
 

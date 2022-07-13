@@ -1,9 +1,5 @@
 .project {
   display: flex;
-  text-decoration: none;
-  &:visited {
-    color: #ffffff;
-  }
   .logoContainer {
     min-height: 50px;
     min-width: 50px;
@@ -14,9 +10,17 @@
     display: flex;
     justify-content: center;
     .logo {
-        align-self: center;
-        height: 40px;
-        width: 40px;
+      height: 40px;
+      width: 40px;
+    }
+    a {
+      text-decoration: none;      
+      align-self: center;
+      height: 40px;
+      width: 40px;
+      &:visited {
+        color: #ffffff;
+      }
     }
   }
   .text {
@@ -28,6 +32,13 @@
       line-height: 16px;
       font-weight: 700;
       margin-bottom: 8px;
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        &:visited {
+          color: #ffffff;
+        }
+      }
     }
     .description {
       font-size: 11px;
