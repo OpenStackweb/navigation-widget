@@ -5,6 +5,10 @@
   &:visited {
     color: #ffffff;
   }
+  &:hover, &:focus {
+    color: #ffffff;
+    text-decoration: none
+  }
   .logoContainer {
     min-height: 50px;
     min-width: 50px;
