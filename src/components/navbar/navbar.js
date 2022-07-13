@@ -37,7 +37,12 @@ const Navbar = ({ projects, currentProject, popupTitle, popupFooterText }) => {
             </div>
             <div className={styles.menu}>
                 <img src={menuIcon} onClick={handleMenuClick} alt="Menu" />
-                {isOpen && <Popup projects={projects} currentProject={currentProject} popupTitle={popupTitle} popupFooterText={popupFooterText} />}
+                {isOpen &&
+                    <>
+                        <Popup projects={projects} currentProject={currentProject} popupTitle={popupTitle} popupFooterText={popupFooterText} />
+                        <div className={styles.background} onClick={() => setIsOpen(false)}></div>
+                    </>
+                }
             </div>
         </nav>
     );
