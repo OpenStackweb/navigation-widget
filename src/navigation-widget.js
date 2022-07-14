@@ -26,6 +26,7 @@ const NavigationWidget = ({ ...props }) => {
 NavigationWidget.propTypes = {
     projects: PropTypes.array.isRequired,
     currentProject: PropTypes.number.isRequired,
+    navbarTitle: PropTypes.string,
     popupTitle: PropTypes.string,
     popupFooterText: PropTypes.string
 }
@@ -33,6 +34,7 @@ NavigationWidget.propTypes = {
 NavigationWidget.defaultProps = {
     projects: [],
     currentProject: 0,    
+    navbarTitle: 'An OpenInfra Project',
     popupTitle: 'More OpenInfra Projects',
     popupFooterText: 'Learn more at'
 }

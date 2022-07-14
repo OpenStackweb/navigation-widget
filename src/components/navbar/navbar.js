@@ -17,9 +17,10 @@ import Popup from '../popup/popup';
 
 import styles from "./index.module.scss";
 
+import openInfraLogo from '../../assets/openinfra-logo.svg';
 import menuIcon from '../../assets/menu-icon.svg';
 
-const Navbar = ({ projects, currentProject, popupTitle, popupFooterText }) => {
+const Navbar = ({ projects, currentProject, navbarTitle, popupTitle, popupFooterText }) => {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -30,10 +31,10 @@ const Navbar = ({ projects, currentProject, popupTitle, popupFooterText }) => {
     return (
         <nav className={styles.navbar}>
             <div className={styles.brand}>
-                <div className={styles.logo}>
-                    <img src={currentProject.logo_url} alt="OpenInfra" />
+            <div className={styles.logo}>
+                    <img src={openInfraLogo} alt="OpenInfra" />
                 </div>
-                {currentProject.nav_bar_title}
+                {navbarTitle}
             </div>
             <div className={styles.menu}>
                 <img src={menuIcon} onClick={handleMenuClick} alt="Menu" />

@@ -17,7 +17,9 @@ import Project from '../project/project';
 
 import styles from "./index.module.scss";
 
-const Popup = ({ projects, currentProject, popupTitle, popupFooterText }) => {
+import openInfraLogo from '../../assets/openinfra-logo.svg';
+
+const Popup = ({ projects, popupTitle, popupFooterText }) => {
 
     return (
         <div className={styles.popup}>
@@ -37,12 +39,12 @@ const Popup = ({ projects, currentProject, popupTitle, popupFooterText }) => {
             </div>
             <div className={styles.footer}>
                 <div className={styles.brand}>
-                    <img src={currentProject.logo_url} />
-                    <span>{currentProject.name}</span>
+                    <img src={openInfraLogo} />
+                    <span>OpenInfra Foundation</span>
                 </div>
                 <span className={styles.link}>
-                    {popupFooterText} <a href={currentProject.learn_more_link} target="_blank" rel="noreferrer noopener">
-                        {currentProject.learn_more_text}
+                    {popupFooterText} <a href={'https://openinfra.dev'} target="_blank" rel="noreferrer noopener">
+                        openinfra.dev
                     </a>
                 </span>
             </div>
