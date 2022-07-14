@@ -30,20 +30,22 @@ const Navbar = ({ projects, currentProject, navbarTitle, popupTitle, popupFooter
 
     return (
         <nav className={styles.navbar}>
-            <div className={styles.brand}>
-            <div className={styles.logo}>
-                    <img src={openInfraLogo} alt="OpenInfra" />
+            <div className={styles.container}>
+                <div className={styles.brand}>
+                    <div className={styles.logo}>
+                        <img src={openInfraLogo} alt="OpenInfra" />
+                    </div>
+                    {navbarTitle}
                 </div>
-                {navbarTitle}
-            </div>
-            <div className={styles.menu}>
-                <img src={menuIcon} onClick={handleMenuClick} alt="Menu" />
-                {isOpen &&
-                    <>
-                        <Popup projects={projects} currentProject={currentProject} popupTitle={popupTitle} popupFooterText={popupFooterText} />
-                        <div className={styles.background} onClick={() => setIsOpen(false)}></div>
-                    </>
-                }
+                <div className={styles.menu}>
+                    <img src={menuIcon} onClick={handleMenuClick} alt="Menu" />
+                    {isOpen &&
+                        <>
+                            <Popup projects={projects} currentProject={currentProject} popupTitle={popupTitle} popupFooterText={popupFooterText} />
+                            <div className={styles.background} onClick={() => setIsOpen(false)}></div>
+                        </>
+                    }
+                </div>
             </div>
         </nav>
     );
