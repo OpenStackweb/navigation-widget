@@ -3,10 +3,6 @@
   color: #ffffff;
   .container {
     height: 40px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -43,34 +39,6 @@
       top: 40px;
       left: 0;
       z-index: 9000;
-    }
-  }
-  @media (min-width: 576px) {
-    .container {
-      max-width: 540px;
-    }
-  }
-  @media (min-width: 768px) {
-    .container {
-      width: 750px;
-      max-width: 720px;
-    }
-  }
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-      max-width: 960px;
-    }
-  }
-  @media (min-width: 1200px) {
-    .container {
-      width: 1170px;
-      max-width: 1140px;
-    }
-  }
-  @media (min-width: 1400px) {
-    .container {
-      max-width: 1320px;
     }
   }
 }

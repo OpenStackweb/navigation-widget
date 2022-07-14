@@ -8,6 +8,8 @@ Stand alone React Component for navigation widget
 
   **currentProject**      = integer that selects the current project
 
+  **containerClass**      = string to apply a class to the container of the navbar.
+
   **navbarTitle**         = string for the navbar title. Default set as 'An OpenInfra Project',
 
   **popupTitle**          = string for the popup title. Default set as 'More OpenInfra Projects',
