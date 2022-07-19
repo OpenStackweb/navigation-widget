@@ -38,7 +38,7 @@ const Navbar = ({ projects, currentProject, containerClass, navbarTitle, popupTi
                     {navbarTitle}
                 </div>
                 <div className={styles.menu}>
-                    <img src={menuIcon} onClick={handleMenuClick} alt="Menu" />
+                    <img className={styles.menuIcon} src={menuIcon} onClick={handleMenuClick} alt="Menu" />
                     {isOpen &&
                         <>
                             <Popup projects={projects} currentProject={currentProject} popupTitle={popupTitle} popupFooterText={popupFooterText} />
