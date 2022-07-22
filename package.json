@@ -1,6 +1,6 @@
 {
   "name": "navigation-widget",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "OpenInfra Foundation Navigation Widget",
   "main": "index.js",
   "scripts": {
