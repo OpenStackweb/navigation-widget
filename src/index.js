@@ -15,11 +15,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import NavigationWidget from './navigation-widget';
 
+import './styles/reset.scss';
+
 import ProjectsData from './projects-data.json';
 
 const widgetProps = {
     projects: ProjectsData,
     currentProject: 3,
+    containerClass: 'container'
 };
 
 // width 780px or 230px
