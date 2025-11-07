@@ -21,6 +21,12 @@ import openInfraLogo from '../../assets/openinfra-logo.svg';
 
 const Popup = ({ projects, popupTitle, popupFooterText }) => {
 
+    const sortedProjects = projects.sort((a, b) => {
+        const latestProject = "openinfra-foundation";
+        if (a.slug === latestProject) return 1;
+        if (b.slug === latestProject) return -1;
+    });
+
     return (
         <div className={styles.popup}>
             <div className={styles.outerTriangle}>
@@ -33,7 +39,7 @@ const Popup = ({ projects, popupTitle, popupFooterText }) => {
             </div>
             <div className={styles.projects}>
                 <div className={styles.projectsWrapper}>
-                    {projects.map((project, index) => <Project project={project} key={index} />)}
+                    {sortedProjects.map((project, index) => <Project project={project} key={index} />)}
                 </div>
                 <hr />
             </div>
@@ -43,8 +49,8 @@ const Popup = ({ projects, popupTitle, popupFooterText }) => {
                     <span>OpenInfra Foundation</span>
                 </div>
                 <span className={styles.link}>
-                    {popupFooterText} <a href={'https://openinfra.dev'} target="_blank" rel="noreferrer noopener">
-                        openinfra.dev
+                    {popupFooterText} <a href={'https://openinfra.org'} target="_blank" rel="noreferrer noopener">
+                        openinfra.org
                     </a>
                 </span>
             </div>
